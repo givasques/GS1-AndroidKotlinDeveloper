@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="18dp"
+        android:background="@color/azul_transparente"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preencha os campos para cadastrar evento extremo:"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:paddingBottom="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Local"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="cidade/bairro"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo do evento extremo"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="chuva intensa, seca, onda de calor, etc.)"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewGrau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grau de impacto"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextGrau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="leve, moderado, severo"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data do evento"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="dd/mm/aaaa"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewPessoasAfetadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número estimado de pessoas afetadas"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextPessoasAfetadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="inserir evento"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <Button
+        android:id="@+id/buttonEquipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="visualizar integrantes da equipe"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewTituloLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LISTAGEM DOS EVENTOS EXTREMOS"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewSubTituloLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do mais recente ao mais antigo"
+        android:textSize="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="18dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/TextViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nossa Equipe"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/TextViewGiovanna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Giovanna Vasques Alexandre – RM 99884"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/TextViewWemilli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Wemilli Nataly Lima de Oliveira – RM 552301"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+
+</LinearLayout>
